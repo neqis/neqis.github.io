@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>NeQIS</title>
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./neural/npm/bootstrap%405.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="./neural/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./js/dics/dics.original.css">
+    <script src="./js/dics/dics.original.js"></script>
+    <script src="./js/event_handler.js"></script>
+
+    <link href="./neural/css?family=IBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
+    <link href="./neural/css-1?family=Inconsolata:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style_neural.css">
+</head>
+
+<body lang="en">
+    <main role="main">
+
+        <section class="jumbotron text-center" id="banner">
+            <div class="container text-center" id="title">
+                <h2 class="jumbotron-heading text-center" style="line-height: 35px;">
+                   NeQIS: Neural Quadratic Implicit Surfaces
+                </h2>
+                
+            </div>
+
+            <div class="container" style="max-width: none; margin-top:10px;">
+
+                <div class="row row-author" style="margin: 0 70px 0 70px; ">
+                    <div class="col-md author">
+                        <a class="link">Anonymous Authors</a><sup style="margin-right:10px"></sup>
+                    </div>   
+
+            <div class="row">
+                <div class="col-md">
+                    <ul class="nav nav-pills">
+                        <li style="padding-top: 10px;" class="space-between">
+                            <a href="https://neqis.github.io/" class="hover-image-link" style="padding-top: 0;">
+                            <image class="first-image" src="./assets/icons/paper.png" width="60px"></image>
+                            <image class="second-image" src="./assets/icons/paper_hover.png" width="60px"></image>
+                            <h3 style="font-size: 1.2rem; padding-top: 10px;"><strong>Paper</strong></h3>
+                            </a>
+                        </li>
+                        <li style="padding-top: 10px;"  class="space-between">
+                            <a href="https://github.com/neqis" class="hover-image-link" >
+                            <image class="first-image" src="./assets/icons/github.png" width="60px"></image>
+                            <image class="second-image" src="./assets/icons/github_hover.png" width="60px"></image>
+                            <h3 style="font-size: 1.2rem; padding-top: 10px;"><strong>Code</strong></h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container" style="padding-top: 20px;">
+        </section>
+    </main>
+
+
+    <div class="container">
+
+        <hr style="border-top: 3px double;">
+
+        <!-- Abstract -->
+        <h5>Abstract</h5>
+        <p style="text-align: justify; padding-bottom: 30px;">
+             We introduce NeQIS, a novel neural surface reconstruction method that accurately recovers 3D surfaces through image-based neural rendering. We observe and theoretically demonstrate that current MLP-based neural representations of  the SDFs, which rely solely on linear layers with ReLU activation functions, are, in fact, a piecewise linear approximation of the SDF. As a result, they struggle to capture higher-order surface details such as curvature. 
+NeQIS addresses this theoretical limitation by introducing quadratic layers, i.e. layers where each neuron performs a quadratic transform of its input. We theoretically demonstrate that such quadratic layers provide a better approximation of the SDF as they enable us to directly model the second-order term in the Taylor expansion of the SDF.  
+Our extensive experiments on benchmark datasets demonstrate that NeQIS outperforms the state-of-the-art in high-quality surface reconstruction, especially for objects and scenes with complex and thin structures.
+        </p>
+
+        <!-- Overview -->
+    </div>
+
+</body>
+
+            </html>

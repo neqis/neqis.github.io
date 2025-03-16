@@ -1,0 +1,1 @@
+neural/npm/mathjax@3/es5

@@ -11,6 +11,12 @@ document.addEventListener('DOMContentLoaded', domReady);
                 hideTexts: false,
                 textPosition: "top"
             });
+
+            new Dics({
+                container: document.querySelectorAll('.b-dics')[1],
+                hideTexts: false,
+                textPosition: "top"
+            });
         }
 
 
@@ -97,99 +103,43 @@ document.addEventListener('DOMContentLoaded', domReady);
             }
         }
 
-        function objectSceneEvent(idx) {
-            let dics = document.querySelectorAll('.b-dics')[1]
-            let sections = dics.getElementsByClassName('b-dics__section')
-            let imagesLength = 3
-            for (let i = 0; i < imagesLength; i++) {
-                let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
-                switch (idx) {
-                    case 0:
-                        image.src = './assets/images/cmp_ps_methods/bear/';
-                        break;
-                    case 1:
-                        image.src = './assets/images/cmp_ps_methods/buddha/';
-                        break;
-                    case 2:
-                        image.src = './assets/images/cmp_ps_methods/cow/';
-                        break;
-                    case 3:
-                        image.src = './assets/images/cmp_ps_methods/pot2/';
-                        break;
-                    case 4:
-                        image.src = './assets/images/cmp_ps_methods/reading/';
-                        break;
-                }
-                switch (i) {
-                    case 0:
-                        image.src = image.src + 'psnerf.png';
-                        break;
-                    case 1:
-                        image.src = image.src + 'ours.png';
-                        break;
-                    case 2:
-                        image.src = image.src + 'neus.png';
-                        break;
-                }
-            }
-
-            let scene_list = document.getElementById("object-scale-recon").children;
-            for (let i = 0; i < scene_list.length; i++) {
-                if (idx == i) {
-                    scene_list[i].children[0].className = "nav-link active"
-                }
-                else {
-                    scene_list[i].children[0].className = "nav-link"
-                }
-            }
-        }
-        
-        // function objectRenderEvent(idx) {
-        //     let dics = document.querySelectorAll('.b-dics')[0]
+        // function objectSceneEvent(idx) {
+        //     let dics = document.querySelectorAll('.b-dics')[1]
         //     let sections = dics.getElementsByClassName('b-dics__section')
-        //     let imagesLength = 2
+        //     let imagesLength = 3
         //     for (let i = 0; i < imagesLength; i++) {
         //         let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
         //         switch (idx) {
         //             case 0:
-        //                 image.src = './assets/images/render_bmvs/bear/';
+        //                 image.src = './assets/images/cmp_ps_methods/bear/';
         //                 break;
         //             case 1:
-        //                 image.src = './assets/images/render_bmvs/camera/';
+        //                 image.src = './assets/images/cmp_ps_methods/buddha/';
         //                 break;
         //             case 2:
-        //                 image.src = './assets/images/render_bmvs/clock/';
+        //                 image.src = './assets/images/cmp_ps_methods/cow/';
         //                 break;
         //             case 3:
-        //                 image.src = './assets/images/render_bmvs/dog/';
+        //                 image.src = './assets/images/cmp_ps_methods/pot2/';
         //                 break;
         //             case 4:
-        //                 image.src = './assets/images/render_bmvs/durian/';
-        //                 break;
-        //             case 5:
-        //                 image.src = './assets/images/render_bmvs/gundam/';
-        //                 break;
-        //             case 6:
-        //                 image.src = './assets/images/render_bmvs/jade/';
-        //                 break;
-        //             case 7:
-        //                 image.src = './assets/images/render_bmvs/man/';
-        //                 break;
-        //             case 8:
-        //                 image.src = './assets/images/render_bmvs/stone/';
+        //                 image.src = './assets/images/cmp_ps_methods/reading/';
         //                 break;
         //         }
         //         switch (i) {
         //             case 0:
-        //                 image.src = image.src + 'rgb.png';
+        //                 image.src = image.src + 'psnerf.png';
         //                 break;
         //             case 1:
-        //                 image.src = image.src + 'normal.png';
+        //                 image.src = image.src + 'ours.png';
+        //                 break;
+        //             case 2:
+        //                 image.src = image.src + 'neus.png';
         //                 break;
         //         }
         //     }
 
-        //     let scene_list = document.getElementById("object-bmvsimages-render").children;
+        //     let scene_list = document.getElementById("object-scale-recon").children;
         //     for (let i = 0; i < scene_list.length; i++) {
         //         if (idx == i) {
         //             scene_list[i].children[0].className = "nav-link active"
@@ -199,9 +149,56 @@ document.addEventListener('DOMContentLoaded', domReady);
         //         }
         //     }
         // }
+        
+        function objectRenderEvent(idx) {
+            let dics = document.querySelectorAll('.b-dics')[0]
+            let sections = dics.getElementsByClassName('b-dics__section')
+            let imagesLength = 2
+            for (let i = 0; i < imagesLength; i++) {
+                let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
+                switch (idx) {
+                    case 0:
+                        image.src = './assets/images/render_bmvs/doll/';
+                        break;
+                    case 1:
+                        image.src = './assets/images/render_bmvs/fountain/';
+                        break;
+                    case 2:
+                        image.src = './assets/images/render_bmvs/gundam/';
+                        break;
+                    case 3:
+                        image.src = './assets/images/render_bmvs/jade/';
+                        break;
+                    case 4:
+                        image.src = './assets/images/render_bmvs/man/';
+                        break;
+                    case 5:
+                        image.src = './assets/images/render_bmvs/stone/';
+                        break;
+                }
+                switch (i) {
+                    case 0:
+                        image.src = image.src + 'rgb.png';
+                        break;
+                    case 1:
+                        image.src = image.src + 'normal.png';
+                        break;
+                }
+            }
+
+            let scene_list = document.getElementById("object-bmvsimages-render").children;
+            for (let i = 0; i < scene_list.length; i++) {
+                if (idx == i) {
+                    scene_list[i].children[0].className = "nav-link active"
+                }
+                else {
+                    scene_list[i].children[0].className = "nav-link"
+                }
+            }
+        }
 
         function objectSceneEventBMVS(idx) {
-            let dics = document.querySelectorAll('.b-dics')[0]
+            let dics = document.querySelectorAll('.b-dics')[1]
             let sections = dics.getElementsByClassName('b-dics__section')
             let imagesLength = 2
             for (let i = 0; i < imagesLength; i++) {

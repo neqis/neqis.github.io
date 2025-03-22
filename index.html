@@ -84,18 +84,39 @@ NeQIS addresses this theoretical limitation by introducing quadratic layers, i.e
 Our extensive experiments on benchmark datasets demonstrate that NeQIS outperforms the state-of-the-art in high-quality surface reconstruction, especially for objects and scenes with complex and thin structures.
         </p>
 
-        <!-- Overview -->
-<!--         <h5>Overview</h5>
-        
-        <p style="text-align: justify;">
-            We present NeQIS, a novel framework for high-fidelity 3D reconstruction of complex objects from multi-view images. NeQIS
-effectively captures complex carvings and cavities of the showpiece, outperforming prior approaches in preserving intricate features.
-        </p> -->
+        <hr style="border-top: 3px double;">
+        <h5>Rendering Results</h5>
+        <h6>Novel view synthesis: Examples of RGB images and their corresponding normal maps rendered, using our approach, from novel views.</h6> 
+        <div class="container;" style=" padding-bottom: 10px;">
+            <ul class="nav nav-tabs nav-fill nav-justified" id="object-bmvsimages-render">
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="objectRenderEvent(0)">Doll</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectRenderEvent(1)">Fountain</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectRenderEvent(2)">Gundam</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectRenderEvent(3)">Jade</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectRenderEvent(4)">Man</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" onclick="objectRenderEvent(5)">Stone</a>
+            </ul>
+            <div class="bordered-container">
+            <div class="b-dics" style="width: 80%; font-weight: 600; margin: 0 auto;">
+                <img src="./assets/images/render_bmvs/doll/rgb.png" alt="RGB">
+                <img src="./assets/images/render_bmvs/doll/normal.png" alt="Normal">
+            </div>
+            </div>
+        </div>
+
         <hr style="border-top: 3px double;">
         <h5>Reconstruction Results</h5>
-
-        <!-- <hr style="border-top: 3px double;"> -->
-        <h6>Comparison with <a href="https://research.nvidia.com/labs/dir/neuralangelo/">Neuralangelo</a> (SOTA).</h6>
 
         <div class="container;" style=" padding-bottom: 10px;">
             <ul class="nav nav-tabs nav-fill nav-justified" id="object-bmvsobjects-recon">

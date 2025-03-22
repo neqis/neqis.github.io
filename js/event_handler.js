@@ -56,19 +56,19 @@ document.addEventListener('DOMContentLoaded', domReady);
                 let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
                 switch (globalModel) {
                     case 0:
-                        image.src = './assets/snnir/images/cmp_diff_views_methods/bear/';
+                        image.src = './assets/images/cmp_diff_views_methods/bear/';
                         break;
                     case 1:
-                        image.src = './assets/snnir/images/cmp_diff_views_methods/buddha/';
+                        image.src = './assets/images/cmp_diff_views_methods/buddha/';
                         break;
                     case 2:
-                        image.src = './assets/snnir/images/cmp_diff_views_methods/cow/';
+                        image.src = './assets/images/cmp_diff_views_methods/cow/';
                         break;
                     case 3:
-                        image.src = './assets/snnir/images/cmp_diff_views_methods/pot2/';
+                        image.src = './assets/images/cmp_diff_views_methods/pot2/';
                         break;
                     case 4:
-                        image.src = './assets/snnir/images/cmp_diff_views_methods/reading/';
+                        image.src = './assets/images/cmp_diff_views_methods/reading/';
                         break;
                 }
                 switch (i) {
@@ -129,19 +129,19 @@ document.addEventListener('DOMContentLoaded', domReady);
                 let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
                 switch (idx) {
                     case 0:
-                        image.src = './assets/snnir/images/cmp_ps_methods/bear/';
+                        image.src = './assets/images/cmp_ps_methods/bear/';
                         break;
                     case 1:
-                        image.src = './assets/snnir/images/cmp_ps_methods/buddha/';
+                        image.src = './assets/images/cmp_ps_methods/buddha/';
                         break;
                     case 2:
-                        image.src = './assets/snnir/images/cmp_ps_methods/cow/';
+                        image.src = './assets/images/cmp_ps_methods/cow/';
                         break;
                     case 3:
-                        image.src = './assets/snnir/images/cmp_ps_methods/pot2/';
+                        image.src = './assets/images/cmp_ps_methods/pot2/';
                         break;
                     case 4:
-                        image.src = './assets/snnir/images/cmp_ps_methods/reading/';
+                        image.src = './assets/images/cmp_ps_methods/reading/';
                         break;
                 }
                 switch (i) {
@@ -176,31 +176,31 @@ document.addEventListener('DOMContentLoaded', domReady);
                 let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
                 switch (idx) {
                     case 0:
-                        image.src = './assets/snnir/images/render_bmvs/bear/';
+                        image.src = './assets/images/render_bmvs/bear/';
                         break;
                     case 1:
-                        image.src = './assets/snnir/images/render_bmvs/camera/';
+                        image.src = './assets/images/render_bmvs/camera/';
                         break;
                     case 2:
-                        image.src = './assets/snnir/images/render_bmvs/clock/';
+                        image.src = './assets/images/render_bmvs/clock/';
                         break;
                     case 3:
-                        image.src = './assets/snnir/images/render_bmvs/dog/';
+                        image.src = './assets/images/render_bmvs/dog/';
                         break;
                     case 4:
-                        image.src = './assets/snnir/images/render_bmvs/durian/';
+                        image.src = './assets/images/render_bmvs/durian/';
                         break;
                     case 5:
-                        image.src = './assets/snnir/images/render_bmvs/gundam/';
+                        image.src = './assets/images/render_bmvs/gundam/';
                         break;
                     case 6:
-                        image.src = './assets/snnir/images/render_bmvs/jade/';
+                        image.src = './assets/images/render_bmvs/jade/';
                         break;
                     case 7:
-                        image.src = './assets/snnir/images/render_bmvs/man/';
+                        image.src = './assets/images/render_bmvs/man/';
                         break;
                     case 8:
-                        image.src = './assets/snnir/images/render_bmvs/stone/';
+                        image.src = './assets/images/render_bmvs/stone/';
                         break;
                 }
                 switch (i) {
@@ -232,24 +232,27 @@ document.addEventListener('DOMContentLoaded', domReady);
                 let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
                 switch (idx) {
                     case 0:
-                        image.src = './assets/snnir/images/cmp_bmvs/camera/';
+                        image.src = './assets/images/comp_bmvs/clock/';
                         break;
                     case 1:
-                        image.src = './assets/snnir/images/cmp_bmvs/clock/';
+                        image.src = './assets/images/comp_bmvs/cow/';
                         break;
                     case 2:
-                        image.src = './assets/snnir/images/cmp_bmvs/cow/';
+                        image.src = './assets/images/comp_bmvs/durian/';
                         break;
                     case 3:
-                        image.src = './assets/snnir/images/cmp_bmvs/dog/';
+                        image.src = './assets/images/comp_bmvs/dog/';
                         break;
                     case 4:
-                        image.src = './assets/snnir/images/cmp_bmvs/man/';
+                        image.src = './assets/images/comp_bmvs/dragon/';
+                        break;
+                    case 5:
+                        image.src = './assets/images/comp_bmvs/stone/';
                         break;
                 }
                 switch (i) {
                     case 0:
-                        image.src = image.src + 'gs.png';
+                        image.src = image.src + 'neuralangelo.png';
                         break;
                     case 1:
                         image.src = image.src + 'ours.png';
@@ -276,19 +279,19 @@ document.addEventListener('DOMContentLoaded', domReady);
                 let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
                 switch (idx) {
                     case 0:
-                        image.src = './assets/snnir/images/cmp_dtu/scan24/';
+                        image.src = './assets/images/cmp_dtu/scan24/';
                         break;
                     case 1:
-                        image.src = './assets/snnir/images/cmp_dtu/scan69/';
+                        image.src = './assets/images/cmp_dtu/scan69/';
                         break;
                     case 2:
-                        image.src = './assets/snnir/images/cmp_dtu/scan106/';
+                        image.src = './assets/images/cmp_dtu/scan106/';
                         break;
                     case 3:
-                        image.src = './assets/snnir/images/cmp_dtu/scan114/';
+                        image.src = './assets/images/cmp_dtu/scan114/';
                         break;
                     case 4:
-                        image.src = './assets/snnir/images/cmp_dtu/scan122/';
+                        image.src = './assets/images/cmp_dtu/scan122/';
                         break;
                 }
                 switch (i) {

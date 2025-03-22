@@ -91,6 +91,40 @@ Our extensive experiments on benchmark datasets demonstrate that NeQIS outperfor
             We present NeQIS, a novel framework for high-fidelity 3D reconstruction of complex objects from multi-view images. NeQIS
 effectively captures complex carvings and cavities of the showpiece, outperforming prior approaches in preserving intricate features.
         </p> -->
+        <hr style="border-top: 3px double;">
+        <h5>Reconstruction Results</h5>
+
+        <!-- <hr style="border-top: 3px double;"> -->
+        <h6>Comparison with <a href="https://research.nvidia.com/labs/dir/neuralangelo/">Neuralangelo</a> (SOTA).</h6>
+
+        <div class="container;" style=" padding-bottom: 10px;">
+            <ul class="nav nav-tabs nav-fill nav-justified" id="object-bmvsobjects-recon">
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="objectSceneEventBMVS(0)">Clock</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventBMVS(1)">Cow</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventBMVS(2)">Durian</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventBMVS(3)">Dog</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventBMVS(4)">Dragon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventBMVS(5)">Stone</a>
+                </li>
+            </ul>
+            <div class="bordered-container">
+            <div class="b-dics" style="width: 70%; font-weight: 600; margin: 0 auto;">
+                <img src="./assets/images/comp_bmvs/clock/neuralangelo.png" alt="Neuralangelo">
+                <img src="./assets/images/comp_bmvs/clock/ours.png" alt="Ours">
+            </div>
+            </div>
+        </div>
     </div>
 
 </body>

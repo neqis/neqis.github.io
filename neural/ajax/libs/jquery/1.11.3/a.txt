@@ -1,1 +1,0 @@
-neural/ajax/libs/jquery/1.11.3

@@ -144,61 +144,61 @@ document.addEventListener('DOMContentLoaded', domReady);
             }
         }
         
-        function objectRenderEvent(idx) {
-            let dics = document.querySelectorAll('.b-dics')[0]
-            let sections = dics.getElementsByClassName('b-dics__section')
-            let imagesLength = 2
-            for (let i = 0; i < imagesLength; i++) {
-                let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
-                switch (idx) {
-                    case 0:
-                        image.src = './assets/images/render_bmvs/bear/';
-                        break;
-                    case 1:
-                        image.src = './assets/images/render_bmvs/camera/';
-                        break;
-                    case 2:
-                        image.src = './assets/images/render_bmvs/clock/';
-                        break;
-                    case 3:
-                        image.src = './assets/images/render_bmvs/dog/';
-                        break;
-                    case 4:
-                        image.src = './assets/images/render_bmvs/durian/';
-                        break;
-                    case 5:
-                        image.src = './assets/images/render_bmvs/gundam/';
-                        break;
-                    case 6:
-                        image.src = './assets/images/render_bmvs/jade/';
-                        break;
-                    case 7:
-                        image.src = './assets/images/render_bmvs/man/';
-                        break;
-                    case 8:
-                        image.src = './assets/images/render_bmvs/stone/';
-                        break;
-                }
-                switch (i) {
-                    case 0:
-                        image.src = image.src + 'rgb.png';
-                        break;
-                    case 1:
-                        image.src = image.src + 'normal.png';
-                        break;
-                }
-            }
+        // function objectRenderEvent(idx) {
+        //     let dics = document.querySelectorAll('.b-dics')[0]
+        //     let sections = dics.getElementsByClassName('b-dics__section')
+        //     let imagesLength = 2
+        //     for (let i = 0; i < imagesLength; i++) {
+        //         let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
+        //         switch (idx) {
+        //             case 0:
+        //                 image.src = './assets/images/render_bmvs/bear/';
+        //                 break;
+        //             case 1:
+        //                 image.src = './assets/images/render_bmvs/camera/';
+        //                 break;
+        //             case 2:
+        //                 image.src = './assets/images/render_bmvs/clock/';
+        //                 break;
+        //             case 3:
+        //                 image.src = './assets/images/render_bmvs/dog/';
+        //                 break;
+        //             case 4:
+        //                 image.src = './assets/images/render_bmvs/durian/';
+        //                 break;
+        //             case 5:
+        //                 image.src = './assets/images/render_bmvs/gundam/';
+        //                 break;
+        //             case 6:
+        //                 image.src = './assets/images/render_bmvs/jade/';
+        //                 break;
+        //             case 7:
+        //                 image.src = './assets/images/render_bmvs/man/';
+        //                 break;
+        //             case 8:
+        //                 image.src = './assets/images/render_bmvs/stone/';
+        //                 break;
+        //         }
+        //         switch (i) {
+        //             case 0:
+        //                 image.src = image.src + 'rgb.png';
+        //                 break;
+        //             case 1:
+        //                 image.src = image.src + 'normal.png';
+        //                 break;
+        //         }
+        //     }
 
-            let scene_list = document.getElementById("object-bmvsimages-render").children;
-            for (let i = 0; i < scene_list.length; i++) {
-                if (idx == i) {
-                    scene_list[i].children[0].className = "nav-link active"
-                }
-                else {
-                    scene_list[i].children[0].className = "nav-link"
-                }
-            }
-        }
+        //     let scene_list = document.getElementById("object-bmvsimages-render").children;
+        //     for (let i = 0; i < scene_list.length; i++) {
+        //         if (idx == i) {
+        //             scene_list[i].children[0].className = "nav-link active"
+        //         }
+        //         else {
+        //             scene_list[i].children[0].className = "nav-link"
+        //         }
+        //     }
+        // }
 
         function objectSceneEventBMVS(idx) {
             let dics = document.querySelectorAll('.b-dics')[0]

@@ -11,30 +11,6 @@ document.addEventListener('DOMContentLoaded', domReady);
                 hideTexts: false,
                 textPosition: "top"
             });
-
-            new Dics({
-                container: document.querySelectorAll('.b-dics')[1],
-                hideTexts: false,
-                textPosition: "top"
-            });
-
-            new Dics({
-                container: document.querySelectorAll('.b-dics')[2],
-                hideTexts: false,
-                textPosition: "top"
-            });
-
-            new Dics({
-                container: document.querySelectorAll('.b-dics')[3],
-                hideTexts: false,
-                textPosition: "top"
-            });
-
-            new Dics({
-                container: document.querySelectorAll('.b-dics')[4],
-                hideTexts: false,
-                textPosition: "top"
-            });
         }
 
 

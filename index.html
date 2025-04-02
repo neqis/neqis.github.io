@@ -118,6 +118,8 @@ Our extensive experiments on benchmark datasets demonstrate that NeQIS outperfor
         <hr style="border-top: 3px double;">
         <h5>Reconstruction Results</h5>
 
+        <h6>Comparison with <a href="https://research.nvidia.com/labs/dir/neuralangelo/">Neuralangelo [CVPR 2023]</a> on the <a href="https://github.com/YoYo000/BlendedMVS"> BMVS dataset</a>.</h6>
+
         <div class="container;" style=" padding-bottom: 10px;">
             <ul class="nav nav-tabs nav-fill nav-justified" id="object-bmvsobjects-recon">
                 <li class="nav-item">
@@ -143,6 +145,71 @@ Our extensive experiments on benchmark datasets demonstrate that NeQIS outperfor
             <div class="b-dics" style="width: 70%; font-weight: 600; margin: 0 auto;">
                 <img src="./assets/images/comp_bmvs/clock/neuralangelo.png" alt="Neuralangelo">
                 <img src="./assets/images/comp_bmvs/clock/ours.png" alt="Ours">
+            </div>
+            </div>
+        </div>
+
+        <h6>Comparison with <a href="https://open3dvlab.github.io/NeuRodin/">NeuRodin [NeurIPS 2024]</a> on the <a href="https://roboimagedata.compute.dtu.dk/?page_id=36"> DTU dataset</a>.</h6>
+
+        <div class="container;" style=" padding-bottom: 10px;">
+            <ul class="nav nav-tabs nav-fill nav-justified" id="object-DTUobjects-recon">
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="objectSceneEventDTU(0)">Scan 40</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventDTU(1)">Scan 55</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventDTU(2)">Scan 83</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventDTU(3)">Scan 110</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" onclick="objectSceneEventDTU(4)">Scan 122</a>
+                </li>
+            </ul>
+            <div class="bordered-container">
+            <div class="b-dics" style="width: 70%; font-weight: 600; margin: 0 auto;">
+                <img src="./assets/images/comp_dtu/scan40/neurodin.png" alt="NeuRodin">
+                <img src="./assets/images/comp_dtu/scan40/ours.png" alt="Ours">
+            </div>
+            </div>
+        </div>
+
+        <h6>Ablation study results. Surface reconstruction comparison with and without quadratic layers.</h6>
+
+        <div class="container;" style=" padding-bottom: 10px;">
+            <ul class="nav nav-tabs nav-fill nav-justified" id="object-ablationDTUobjects-recon">
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="ablationDTU(0)">Scan 24</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ablationDTU(1)">Scan 40</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ablationDTU(2)">Scan 55</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ablationDTU(3)">Scan 63</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" onclick="ablationDTU(4)">Scan 65</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ablationDTU(5)">Scan 110</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ablationDTU(6)">Scan 118</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" onclick="ablationDTU(7)">Scan 122</a>
+                </li>
+            </ul>
+            <div class="bordered-container">
+            <div class="b-dics" style="width: 70%; font-weight: 600; margin: 0 auto;">
+                <img src="./assets/images/ablation/scan24/wo.png" alt="Without Quadratic Layers">
+                <img src="./assets/images/ablation/scan24/ours.png" alt="Ours">
             </div>
             </div>
         </div>

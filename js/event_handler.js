@@ -17,138 +17,19 @@ document.addEventListener('DOMContentLoaded', domReady);
                 hideTexts: false,
                 textPosition: "top"
             });
+
+            new Dics({
+                container: document.querySelectorAll('.b-dics')[3],
+                hideTexts: false,
+                textPosition: "top"
+            });
+
+            new Dics({
+                container: document.querySelectorAll('.b-dics')[4],
+                hideTexts: false,
+                textPosition: "top"
+            });
         }
-
-
-        function changeView(idx){
-            globalView = idx;
-            updateVisual();
-        }
-
-        function changeModel(idx){
-            globalModel = idx;
-            updateVisual();
-        }
-
-        function updateVisual() {
-            let dics = document.querySelectorAll('.b-dics')[2]
-            let sections = dics.getElementsByClassName('b-dics__section')
-            let imagesLength = 3
-            for (let i = 0; i < imagesLength; i++) {
-                let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
-                switch (globalModel) {
-                    case 0:
-                        image.src = './assets/images/cmp_diff_views_methods/bear/';
-                        break;
-                    case 1:
-                        image.src = './assets/images/cmp_diff_views_methods/buddha/';
-                        break;
-                    case 2:
-                        image.src = './assets/images/cmp_diff_views_methods/cow/';
-                        break;
-                    case 3:
-                        image.src = './assets/images/cmp_diff_views_methods/pot2/';
-                        break;
-                    case 4:
-                        image.src = './assets/images/cmp_diff_views_methods/reading/';
-                        break;
-                }
-                switch (i) {
-                    case 0:
-                        image.src = image.src + '/sn_';
-                        break;
-                    case 1:
-                        image.src = image.src + '/ours_';
-                        break;
-                    case 2:
-                        image.src = image.src + '/rnb_neus_';
-                        break;
-                }
-                switch (globalView) {
-                    case 0:
-                        image.src = image.src + '2.png';
-                        break;
-                    case 1:
-                        image.src = image.src + '5.png';
-                        break;
-                    case 2:
-                        image.src = image.src + '10.png';
-                        break;
-                    case 3:
-                        image.src = image.src + '15.png';
-                        break;
-                    case 4:
-                        image.src = image.src + '20.png';
-                        break;
-                }
-            }
-
-            let scene_list = document.getElementById("modelChoice").children;
-            for (let i = 0; i < scene_list.length; i++) {
-                if (globalModel == i) {
-                    scene_list[i].children[0].className = "nav-link active"
-                }
-                else {
-                    scene_list[i].children[0].className = "nav-link"
-                }
-            }
-            let scene_list_2 = document.getElementById("viewChoice").children;
-            for (let i = 0; i < scene_list.length; i++) {
-                if (globalView == i) {
-                    scene_list_2[i].children[0].className = "nav-link active"
-                }
-                else {
-                    scene_list_2[i].children[0].className = "nav-link"
-                }
-            }
-        }
-
-        // function objectSceneEvent(idx) {
-        //     let dics = document.querySelectorAll('.b-dics')[1]
-        //     let sections = dics.getElementsByClassName('b-dics__section')
-        //     let imagesLength = 3
-        //     for (let i = 0; i < imagesLength; i++) {
-        //         let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
-        //         switch (idx) {
-        //             case 0:
-        //                 image.src = './assets/images/cmp_ps_methods/bear/';
-        //                 break;
-        //             case 1:
-        //                 image.src = './assets/images/cmp_ps_methods/buddha/';
-        //                 break;
-        //             case 2:
-        //                 image.src = './assets/images/cmp_ps_methods/cow/';
-        //                 break;
-        //             case 3:
-        //                 image.src = './assets/images/cmp_ps_methods/pot2/';
-        //                 break;
-        //             case 4:
-        //                 image.src = './assets/images/cmp_ps_methods/reading/';
-        //                 break;
-        //         }
-        //         switch (i) {
-        //             case 0:
-        //                 image.src = image.src + 'psnerf.png';
-        //                 break;
-        //             case 1:
-        //                 image.src = image.src + 'ours.png';
-        //                 break;
-        //             case 2:
-        //                 image.src = image.src + 'neus.png';
-        //                 break;
-        //         }
-        //     }
-
-        //     let scene_list = document.getElementById("object-scale-recon").children;
-        //     for (let i = 0; i < scene_list.length; i++) {
-        //         if (idx == i) {
-        //             scene_list[i].children[0].className = "nav-link active"
-        //         }
-        //         else {
-        //             scene_list[i].children[0].className = "nav-link"
-        //         }
-        //     }
-        // }
         
         function objectRenderEvent(idx) {
             let dics = document.querySelectorAll('.b-dics')[0]
@@ -245,31 +126,31 @@ document.addEventListener('DOMContentLoaded', domReady);
         }
 
         function objectSceneEventDTU(idx) {
-            let dics = document.querySelectorAll('.b-dics')[4]
+            let dics = document.querySelectorAll('.b-dics')[2]
             let sections = dics.getElementsByClassName('b-dics__section')
             let imagesLength = 2
             for (let i = 0; i < imagesLength; i++) {
                 let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
                 switch (idx) {
                     case 0:
-                        image.src = './assets/images/cmp_dtu/scan24/';
+                        image.src = './assets/images/comp_dtu/scan40/';
                         break;
                     case 1:
-                        image.src = './assets/images/cmp_dtu/scan69/';
+                        image.src = './assets/images/comp_dtu/scan55/';
                         break;
                     case 2:
-                        image.src = './assets/images/cmp_dtu/scan106/';
+                        image.src = './assets/images/comp_dtu/scan83/';
                         break;
                     case 3:
-                        image.src = './assets/images/cmp_dtu/scan114/';
+                        image.src = './assets/images/comp_dtu/scan110/';
                         break;
                     case 4:
-                        image.src = './assets/images/cmp_dtu/scan122/';
+                        image.src = './assets/images/comp_dtu/scan122/';
                         break;
                 }
                 switch (i) {
                     case 0:
-                        image.src = image.src + 'gs.png';
+                        image.src = image.src + 'neurodin.png';
                         break;
                     case 1:
                         image.src = image.src + 'ours.png';
@@ -286,4 +167,57 @@ document.addEventListener('DOMContentLoaded', domReady);
                     scene_list[i].children[0].className = "nav-link"
                 }
             }
+        }
+        
+        function ablationDTU(idx) {
+            let dics = document.querySelectorAll('.b-dics')[3]
+            let sections = dics.getElementsByClassName('b-dics__section')
+            let imagesLength = 2
+            for (let i = 0; i < imagesLength; i++) {
+                let image = sections[i].getElementsByClassName('b-dics__image-container')[0].getElementsByClassName('b-dics__image')[0]
+                switch (idx) {
+                    case 0:
+                        image.src = './assets/images/ablation/scan24/';
+                        break;
+                    case 1:
+                        image.src = './assets/images/ablation/scan40/';
+                        break;
+                    case 2:
+                        image.src = './assets/images/ablation/scan55/';
+                        break;
+                    case 3:
+                        image.src = './assets/images/ablation/scan63/';
+                        break;
+                    case 4:
+                        image.src = './assets/images/ablation/scan65/';
+                        break;
+                    case 5:
+                        image.src = './assets/images/ablation/scan110/';
+                        break;
+                    case 6:
+                        image.src = './assets/images/ablation/scan118/';
+                        break;
+                    case 7:
+                        image.src = './assets/images/ablation/scan122/';
+                        break;
+                }
+                switch (i) {
+                    case 0:
+                        image.src = image.src + 'wo.png';
+                        break;
+                    case 1:
+                        image.src = image.src + 'ours.png';
+                        break;
+                }
             }
+
+            let scene_list = document.getElementById("object-ablationDTUobjects-recon").children;
+            for (let i = 0; i < scene_list.length; i++) {
+                if (idx == i) {
+                    scene_list[i].children[0].className = "nav-link active"
+                }
+                else {
+                    scene_list[i].children[0].className = "nav-link"
+                }
+            }
+        }

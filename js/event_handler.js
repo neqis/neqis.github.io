@@ -139,12 +139,15 @@ document.addEventListener('DOMContentLoaded', domReady);
                         image.src = './assets/images/comp_dtu/scan55/';
                         break;
                     case 2:
-                        image.src = './assets/images/comp_dtu/scan83/';
+                        image.src = './assets/images/comp_dtu/scan69/';
                         break;
                     case 3:
-                        image.src = './assets/images/comp_dtu/scan110/';
+                        image.src = './assets/images/comp_dtu/scan83/';
                         break;
                     case 4:
+                        image.src = './assets/images/comp_dtu/scan110/';
+                        break;
+                    case 5:
                         image.src = './assets/images/comp_dtu/scan122/';
                         break;
                 }

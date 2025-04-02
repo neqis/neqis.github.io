@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', domReady);
             });
 
             new Dics({
-                container: document.querySelectorAll('.b-dics')[3],
+                container: document.querySelectorAll('.b-dics')[2],
                 hideTexts: false,
                 textPosition: "top"
             });
 
             new Dics({
-                container: document.querySelectorAll('.b-dics')[4],
+                container: document.querySelectorAll('.b-dics')[3],
                 hideTexts: false,
                 textPosition: "top"
             });
